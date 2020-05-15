@@ -1,0 +1,55 @@
+body{
+    margin: 20px;
+    padding: 20px;
+}
+h1{
+    animation: headerAnimation 5s infinite;
+}
+p{
+    animation: pAnimation 5s infinite;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: darkviolet;
+    border-radius: 50%;
+    animation: circleAnimation 5s infinite;
+    ani
+}
+
+@keyframes circleAnimation {
+    0% {
+      transform: scale(1);
+    }
+       
+    50% {
+      transform: scale(0.5);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes headerAnimation{
+      from {
+          color: darkblue;
+          font-size: 20px;
+          margin-left: 50px;
+      }
+      to{
+          color: darkred;
+          font-size: 30px;
+          margin-left: 80px;
+
+      }
+  }
+  @keyframes pAnimation{
+      from{
+          color: rgb(42, 42, 42);
+
+      }
+      to{
+          color: rgba(42, 42, 42, 0.5);
+      }
+  }
+  
